@@ -1,0 +1,14 @@
+def change_letter(stroke, index):
+    a_list = []
+    b = ''
+    for letter in stroke:
+        a_list.append(letter)
+    a_list[index] = ', '
+    for i in range(len(a_list)):
+        b += a_list[i]
+    return b
+
+a = 'казнить нельзя помиловать'
+a = change_letter(a, 7)
+a = change_letter(a, 15)
+print(a)
