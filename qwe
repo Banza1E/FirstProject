@@ -1,0 +1,12 @@
+import os
+spisok = []
+for file in os.listdir():
+    if file.endswith(".txt"):
+        spisok.append(file)
+for a in range(len(spisok)):
+    file = open(spisok[a], "r")
+    data = file.read()
+    data.find("АНДРОМЕДА")
+    if data.find("АНДРОМЕДА") != -1:
+        print(spisok[a])
+        print(data)
